@@ -1,0 +1,96 @@
+$circle-bg-color: rgb(149, 235, 206);
+$name-color: rgb(229, 248, 242);
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    margin-top: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: $name-color;
+    text-shadow: 1px 1px 3px black;
+}
+
+.front {
+    color: $name-color;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    margin-bottom: 50px;
+}
+
+.circle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.circle {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: $circle-bg-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+    color: #2d3331;
+    transition: box-shadow 0.3s ease-in-out;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+    .about-me {
+        text-align: center;
+        padding: 10px;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+    }
+}
+
+.color-khaki {
+    background-color: #e1b77f;
+    box-shadow: 0 0 50px 10px rgb(255, 255, 255);
+    height: 400px;
+    width: 400px;
+}
+
+.color-aliceblue {
+    background-color: aliceblue;
+    box-shadow: 0 0 50px 10px rgb(95, 73, 73);
+}
+
+.color-moon {
+    background-color: rgb(74, 92, 86);
+    color: white;
+    box-shadow: 0 0 50px 10px gold;
+}
+
+@media screen and (max-width: 768px) {
+    .circle {
+        width: calc(50% - 40px);
+    }
+}
