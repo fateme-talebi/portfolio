@@ -5,7 +5,7 @@ function Portfolio() {
   return (
     <div className="container">
       <header className="name">Fatemeh Talebi</header>
-      <div className="front">FrontEnd developer</div>
+      <div className="front">Front end developer</div>
       <div className="circle-container">
         <CircleComponent color="color-khaki">
           <div className="about-me">
