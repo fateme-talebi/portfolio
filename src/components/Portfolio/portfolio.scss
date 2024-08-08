@@ -71,22 +71,54 @@ $name-color: rgb(229, 248, 242);
     }
 }
 
+@keyframes glowing-gold {
+    0% {
+        box-shadow: 0 0 35px 10px gold;
+    }
+
+    100% {
+        box-shadow: 0 0 53px 13px gold;
+    }
+}
+
+@keyframes glowing-khaki {
+    0% {
+        box-shadow: 0 0 35px 10px rgb(255, 255, 255);
+    }
+
+    100% {
+        box-shadow: 0 0 53px 13px rgb(255, 255, 255);
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        box-shadow: 0 0 35px 10px gold;
+    }
+
+    100% {
+        box-shadow: 0 0 53px 13px gold;
+    }
+}
+
 .color-khaki {
     background-color: #e1b77f;
     box-shadow: 0 0 50px 10px rgb(255, 255, 255);
     height: 400px;
     width: 400px;
+    animation: glowing-khaki 2s infinite alternate;
 }
 
 .color-aliceblue {
     background-color: aliceblue;
-    box-shadow: 0 0 50px 10px rgb(95, 73, 73);
+    box-shadow: 0 0 50px 10px rgb(156, 118, 118);
 }
 
 .color-moon {
     background-color: rgb(74, 92, 86);
     color: white;
     box-shadow: 0 0 50px 10px gold;
+    animation: glowing-gold 2s infinite alternate;
 }
 
 @media screen and (max-width: 768px) {
@@ -94,8 +126,10 @@ $name-color: rgb(229, 248, 242);
         width: calc(100% - 40px);
         border-radius: 10px;
         margin: 30px;
+        animation: none;
     }
-    .name{
+
+    .name {
         font-size: 2rem;
     }
 }
